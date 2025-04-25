@@ -1,0 +1,2 @@
+This is a sample file.
+It will be converted to uppercase and written to output.txt.
