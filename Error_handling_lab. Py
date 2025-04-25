@@ -1,0 +1,16 @@
+# error_handling_lab.py
+
+def read_file():
+    filename = input("Enter the filename to read: ")
+    try:
+        with open(filename, "r") as file:
+            print("File content:\n")
+            print(file.read())
+    except FileNotFoundError:
+        print("Error: File not found.")
+    except IOError:
+        print("Error: File cannot be read.")
+    except Exception as e:
+        print(f"An unexpected error occurred: {e}")
+
+read_file()
